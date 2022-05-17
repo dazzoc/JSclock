@@ -14,7 +14,8 @@
         <div class="hand second-hand"></div>
       </div>
     </div>
-
+    <img class='clock-img' src="./ClockFace.jpg" alt="">
+    
 
   <style>
     html {
@@ -33,20 +34,31 @@
       align-items: center;
     }
 
+    .clock-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      z-index: -1;
+    }
+
     .clock {
       width: 30rem;
       height: 30rem;
-      border: 20px solid white;
+      border: 25px solid rgb(27, 226, 193);
       border-radius: 50%;
       margin: 50px auto;
       position: relative;
       padding: 2rem;
+      z-index: 999;
       box-shadow:
         0 0 0 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 0 3px #8df8c6,
         inset 0 0 10px black,
         0 0 10px rgba(0,0,0,0.2);
     }
+
 
     .clock-face {
       position: relative;
